@@ -5,9 +5,9 @@ let peoples = []
 for(let i = 0; i < 45; i++) {
   peoples.push(
     { 
-      idade: randomNumber(10, 60), 
-      sexo: i % 2 === 0 ? 'F' : 'M',
-      opiniao: randomNumber(1, 4) 
+      idade: randomNumber(10, 60), // prompt("Insira sua idade");
+      sexo: i % 2 === 0 ? 'F' : 'M', // prompt("Insira seu sexo");
+      opiniao: randomNumber(1, 4) // prompt("Insira sua opniao");
     })
 }
 
