@@ -1,0 +1,126 @@
+*,
+*::after,
+*::before { 
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html { 
+    font-size: 62.5%;
+    font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+}
+
+.main {
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  height: 80%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  left: 0; 
+  bottom: 15px; 
+  right: 0;
+}
+
+.main img {
+    border-radius: 30%;
+    margin-top: -80px;
+    position: fixed;
+    -moz-box-shadow: 0px 6px 5px #ccc;
+    -webkit-box-shadow: 0px 6px 5px #ccc;
+    box-shadow: 0px 6px 5px #ccc;
+    -webkit-border-radius:190px;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    flex-direction: column;
+    text-align: center;
+    height: 67%;
+    bottom: 0;
+}
+
+.title {
+    font-size: 95%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.me {
+    height: 43%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.icons {
+    height: 25%;
+    margin: 0 auto;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+code {
+    text-align: justify;
+}
+
+.stack {
+    margin-left: 40px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.typing-demo {
+    width: 18ch;
+    animation: typing 3s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 1.3em;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+      
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+@media 
+(min-width: 720px) and (max-width: 1024px),
+(min-width: 480px) and (max-width: 677px),
+(min-width: 320px) and (max-width: 480px),
+(min-width: 540px) and (max-width: 720px),
+(min-width: 280px) and (max-width: 653px) {
+    .main {
+        width: 90vw;
+        font-size: 77%;
+    }
+
+    .icons {
+        width: 60%;
+    }
+}
