@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" type="text/javascript"></script>
+    <title>Formulário Principal</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form>
+        <label>Nome</label>
+        <input type="text" name="Nome" placeholder="Insira seu nome">
+
+        <label>Email</label>
+        <input type="email" name="Email" placeholder="Insira seu e-mail">
+
+        <label>Comentário</label>
+        <textarea rows="10" name="Comentario" placeholder="Insira seu comentário"></textarea>
+
+
+        <label>Pesquisa:</label>
+        <div>        
+            <br>
+            Sim
+            <input type="checkbox" name="Pesquisa" id="Pesquisa" checked>
+            Não 
+            <input type="checkbox" name="Pesquisa" id="Pesquisa">
+        </div>
+        
+        <div class="btns">
+            <button type="submit">Enviar</button>
+            <button type="button" id="limpar">Limpar</button>
+        </div>
+        
+    </form>
+</body>
+</html>

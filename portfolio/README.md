@@ -1,6 +1,6 @@
 # Portfolio
 
-Portfolio criado para  aula de Web da FATEC-SO. É possível acessar [aqui](otsu.dev.br).
+Portfolio criado para  aula de Web da FATEC-SO. É possível acessar [aqui](https://otsu.dev.br).
 
 
 ## Tecnologias utilizadas
@@ -9,5 +9,3 @@ Portfolio criado para  aula de Web da FATEC-SO. É possível acessar [aqui](otsu
 * Javascript
 * CSS
 * tsParticle
-
-
