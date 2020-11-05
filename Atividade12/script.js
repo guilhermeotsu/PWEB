@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     $inputs.push(document.querySelector("textarea"))
 
     $checks.forEach((item, i) => {
-        item.addEventListener("change", function() {
+        item.addEventListener("change", () => {
             if(i) {
                 $checks[i - 1].checked = false
                 return
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })
 
-    document.querySelector("#limpar").addEventListener("click", function() {
+    document.querySelector("#limpar").addEventListener("click", () => {
         $inputs.forEach(item => item.value = "")
     })
 })

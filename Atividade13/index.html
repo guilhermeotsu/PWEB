@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+</head>
+<body>
+    <h1>Cursos Fatec</h1>
+
+    <label for="cursos">Cursos</label>
+    <select id="" name="cursos">
+        <option>Selecione um curso</option>
+        <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+        <option value="bio">Sistemas Biomédicos</option>
+        <option value="mec">Mecanica</option>
+    </select>
+
+    <script>
+        document.querySelector("select").addEventListener("change", function() {
+            window.open(`${this.value}.html`, "testWindow", "width=250, height=150, left=10, top=10");
+        })
+    </script>
+</body>
+</html>
