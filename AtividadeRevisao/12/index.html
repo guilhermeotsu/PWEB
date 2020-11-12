@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 12
+        console.log(orderNumbers(4, 2, 1))
+        function orderNumbers() {
+            return Array.from(arguments).sort().join(' ')
+        }
+
+        // 13
+        console.log(isTringle(1, 2, 3))
+        function isTringle() {
+            const a = arguments[0]
+            const b = arguments[1]
+            const c = arguments[2]
+
+            if(a < (b + c)) {
+                if(b < (a + c)) {
+                    if(c < (a + b)) {
+                        return true
+                    }
+                }
+            }
+
+            return false
+        }
+
+        // 14
+        const arr = []
+
+        for(let i = 0; i < 20; i++) {
+            arr.push(
+                {
+                    altura: (Math.floor(Math.random() * 210) + 145),
+                    sexo: i % 2 === 0 ? 'F' : 'M'
+                }
+            )
+        }
+
+        function calcula() {
+            const persons = arguments[0]
+
+            return {
+                maiorAltura: Math.max.apply(Math, persons.map(x => x.altura)),
+                menorAltura: Math.min.apply(Math, persons.map(x => x.altura)),
+                mediaAltura: persons.map(x => x.altura).reduce((avg, item, _, { length }) => (avg + item / length), 0).toFixed(0),
+                numHomens: persons.filter(x => x.sexo === 'M').length,
+                numMulhers: persons.filter(x => x.sexo === 'F').length,
+                porcentagens: {
+                    homens: ((100 * persons.filter(x => x.sexo === 'F').length) / persons.length).toFixed(1) + '%',
+                    mulheres: ((100 * persons.filter(x => x.sexo === 'M').length) / persons.length).toFixed(1) + '%',
+                }
+            }
+        }
+    </script>
+</body>
+</html>
